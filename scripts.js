@@ -1,3 +1,30 @@
+// Show the outdated warning on page load
+window.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('asite-mod');
+    if (modal) {
+        setTimeout(() => {
+            modal.classList.add('nav-ds-show');
+        }, 500); // Slight delay for smoother appearance
+    }
+});
+
+// Function to close the warning
+function asiteExit() {
+    const modal = document.getElementById('asite-mod');
+    if (modal) {
+        modal.classList.remove('nav-ds-show');
+    }
+}
+
+
+
+
+
+
+
+
+
+
 let quotes = [
   "Believe in yourself and all that you are.",
   "The only way to do great work is to love what you do.",
